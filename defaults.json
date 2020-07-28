@@ -363,7 +363,7 @@
         ],
         "miscellaneous":{
             "disable_logging_to_history_and_site_map":false,
-            "disable_out_of_scope_logging_to_history_and_site_map":true,
+            "disable_out_of_scope_logging_to_history_and_site_map":false,
             "disable_web_interface":false,
             "remove_unsupported_encodings_from_accept_encoding_headers_in_incoming_requests":true,
             "set_connection_close_header_on_requests":true,
@@ -438,6 +438,26 @@
                 {
                     "enabled":true,
                     "host":"incoming.telemetry.mozilla.org",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"safebrowsing.googleapis.com",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"snippets.cdn.mozilla.net",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"shavar.services.mozilla.com",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"tracking-protection.cdn.mozilla.net",
                     "protocol":"any"
                 }
             ]
