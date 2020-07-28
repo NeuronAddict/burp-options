@@ -459,6 +459,21 @@
                     "enabled":true,
                     "host":"tracking-protection.cdn.mozilla.net",
                     "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"ocsp.pki.goog",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"normandy.cdn.mozilla.net",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"classify-client.services.mozilla.com",
+                    "protocol":"any"
                 }
             ]
         },
@@ -571,12 +586,7 @@
         "scope":{
             "advanced_mode":false,
             "exclude":[],
-            "include":[
-                {
-                    "enabled":true,
-                    "prefix":"http://localhost:8080"
-                }
-            ]
+            "include":[]
         }
     }
 }
