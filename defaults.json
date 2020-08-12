@@ -474,6 +474,16 @@
                     "enabled":true,
                     "host":"classify-client.services.mozilla.com",
                     "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"aus5.mozilla.org",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"versioncheck-bg.addons.mozilla.org",
+                    "protocol":"any"
                 }
             ]
         },
