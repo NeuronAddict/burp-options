@@ -260,13 +260,13 @@
             },
             "by_file_extension":{
                 "hide_items":[
-                    "js",
                     "gif",
                     "jpg",
                     "png",
-                    "css"
+                    "css",
+                    "svg"
                 ],
-                "hide_specific":false,
+                "hide_specific":true,
                 "show_items":[
                     "asp",
                     "aspx",
@@ -653,12 +653,29 @@
                     "host":".*\\.web-security-academy.net",
                     "port":"^443$",
                     "protocol":"https"
+                },
+                {
+                    "enabled":true,
+                    "file":".*\\.css\\.map",
+                    "protocol":"any"
                 }
             ],
             "include":[
                 {
                     "enabled":true,
                     "host":".*\\.web-security-academy.net",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "file":"^/LoggerPlusPlus.*",
+                    "host":"^project-extension-preference-store-do-not-delete$",
+                    "port":"^65535$",
+                    "protocol":"https"
+                },
+                {
+                    "enabled":true,
+                    "host":".*\\.burpcollaborator\\.net",
                     "protocol":"any"
                 }
             ]
