@@ -145,6 +145,9 @@
             }
         },
         "http":{
+            "http2":{
+                "enable_http2":true
+            },
             "redirections":{
                 "understand_3xx_status_code":true,
                 "understand_any_status_code_with_location_header":false,
@@ -169,6 +172,10 @@
                 "poll_over_unencrypted_http":false,
                 "polling_location":"",
                 "type":"default"
+            },
+            "embedded_browser":{
+                "allow_running_without_sandbox":false,
+                "disable_gpu":false
             },
             "logging":{
                 "requests":{
@@ -482,9 +489,12 @@
         "request_listeners":[
             {
                 "certificate_mode":"per_host",
+                "custom_tls_protocols":[],
+                "enable_http2":true,
                 "listen_mode":"loopback_only",
                 "listener_port":8118,
-                "running":true
+                "running":true,
+                "use_custom_tls_protocols":false
             }
         ],
         "response_modification":{
@@ -524,8 +534,13 @@
         }
     },
     "repeater":{
+        "allow_http2_alpn_override":false,
+        "enable_http2_connection_reuse":true,
+        "enforce_protocol_in_redirections":false,
         "follow_redirections":"never",
+        "normalize_line_endings":true,
         "process_cookies_in_redirections":false,
+        "strip_connection_header_over_http2":true,
         "unpack_gzip_deflate":true,
         "update_content_length":true
     },
