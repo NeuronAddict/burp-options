@@ -658,6 +658,13 @@
                     "enabled":true,
                     "file":".*\\.css\\.map",
                     "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "file":"/resources/labheader/js/labHeader.js",
+                    "host":".*\\.web-security-academy.net",
+                    "port":"443",
+                    "protocol":"https"
                 }
             ],
             "include":[
